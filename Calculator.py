@@ -34,30 +34,30 @@ def Process():
     Answer = First_Number + Second_Number
     print("\nAnswer: " + str(Answer))
     print("\n")
-    Continue()
+    Resume()
   elif Operator == "2":
     First_Number = int(input("First number: "))
     Second_Number = int(input("Second number: "))
     Answer = First_Number - Second_Number
     print("\nAnswer: " + str(Answer))
     print("\n")
-    Continue()
+    Resume()
   elif Operator == "3":
     First_Number = int(input("First number: "))
     Second_Number = int(input("Second number: "))
     Answer = First_Number * Second_Number
     print("\nAnswer: " + str(Answer))
     print("\n")
-    Continue()
+    Resume()
   elif Operator == "4":
     First_Number = int(input("First number: "))
     Second_Number = int(input("Second number: "))
     Answer = First_Number / Second_Number
     print("\nAnswer: " + str(Answer))
     print("\n")
-    Continue()
+    Resume()
 #Process of continuation
-def Continue():
+def Resume():
   Continue = input("Do you want to continue using the program (Yes/No)? ")
   if Continue == "Yes":
     print("\n")
@@ -67,7 +67,7 @@ def Continue():
     exit()
   else:
     print("Invalid input. Only 'Yes' or 'No' is allowed (Case sensitive). Please try again.")
-    Continue()
+    Resume()
 
-#Start of function that control the program
+#Start of functions that control the program
 Input()
