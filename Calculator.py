@@ -4,7 +4,7 @@
 print("Made by cn1Qu9n.\n")
 print("0: Exit\n1: Addition\n2: Subtraction\n3: Multiplication\n4: Division\n")
 
-#Processing of input
+#Definitions of functions
 def Input():
   global Operator
   Operator = input("Number of arithmetic operator you wish to use (0,1,2,3,4): ")
@@ -56,7 +56,7 @@ def Process():
     print("\nAnswer: " + str(Answer))
     print("\n")
     Resume()
-#Process of continuation
+
 def Resume():
   Continue = input("Do you want to continue using the program (Yes/No)? ")
   if Continue == "Yes":
@@ -66,8 +66,8 @@ def Resume():
     print("Exiting...")
     exit()
   else:
-    print("Invalid input. Only 'Yes' or 'No' is allowed (Case sensitive). Please try again.")
+    print("Invalid input. Only \"Yes\" or \"No\" is allowed (Case sensitive). Please try again.")
     Resume()
 
-#Start of functions that control the program
+#Start of functions
 Input()
